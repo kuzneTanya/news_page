@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background: url(./assets/header.jpg) center no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #7b3f00;
+    text-transform: uppercase;
+    font-size: 4.5em;
+    font-weight: lighter;
+    text-shadow: #301807 1px 1px 2px;
+    font-family: "Playfair Display SC", serif;
+}
+
+.news {
+    background-color: #eee;
+    padding: 50px 0 32px;
+}
+
+article {
+    width: 50%;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+article a {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #a14e00;
+}
+
+article h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(134, 142, 150);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+article p {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+article:nth-of-type(2n) {
+    background-color: #7b400042;
+}
+
+article:nth-child(-n+2) h2::before {
+    content: "new ";
+    font-size: smaller;
+    font-style: italic;
+    color: rgb(136, 133, 133);
+    text-shadow: rgba(224, 66, 66, 1) 2px 2px 5px;
+    
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color: #4d4d4d;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: rgb(108, 117, 125);
+    font-family: "Playfair Display SC", serif;
+}
